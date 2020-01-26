@@ -42,6 +42,7 @@
             this.OrderTimeComboBox = new System.Windows.Forms.ComboBox();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.WarningText = new System.Windows.Forms.Label();
+            this.Date = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -106,6 +107,15 @@
             // DrawerComboBox
             // 
             this.DrawerComboBox.FormattingEnabled = true;
+            this.DrawerComboBox.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
             this.DrawerComboBox.Location = new System.Drawing.Point(180, 92);
             this.DrawerComboBox.Name = "DrawerComboBox";
             this.DrawerComboBox.Size = new System.Drawing.Size(125, 28);
@@ -123,6 +133,12 @@
             // MaterialComboBox
             // 
             this.MaterialComboBox.FormattingEnabled = true;
+            this.MaterialComboBox.Items.AddRange(new object[] {
+            "Laminate",
+            "Oak",
+            "Rosewood",
+            "Veneer",
+            "Pine"});
             this.MaterialComboBox.Location = new System.Drawing.Point(9, 156);
             this.MaterialComboBox.Name = "MaterialComboBox";
             this.MaterialComboBox.Size = new System.Drawing.Size(125, 28);
@@ -140,6 +156,11 @@
             // OrderTimeComboBox
             // 
             this.OrderTimeComboBox.FormattingEnabled = true;
+            this.OrderTimeComboBox.Items.AddRange(new object[] {
+            "Default (14 Days)",
+            "7 Days",
+            "5 Days",
+            "3 Days"});
             this.OrderTimeComboBox.Location = new System.Drawing.Point(180, 156);
             this.OrderTimeComboBox.Name = "OrderTimeComboBox";
             this.OrderTimeComboBox.Size = new System.Drawing.Size(125, 28);
@@ -147,7 +168,7 @@
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Location = new System.Drawing.Point(82, 202);
+            this.SubmitButton.Location = new System.Drawing.Point(180, 202);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(150, 30);
             this.SubmitButton.TabIndex = 12;
@@ -166,11 +187,21 @@
             this.WarningText.TabIndex = 13;
             this.WarningText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Date
+            // 
+            this.Date.AutoSize = true;
+            this.Date.Location = new System.Drawing.Point(13, 202);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(51, 20);
+            this.Date.TabIndex = 14;
+            this.Date.Text = "label7";
+            // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 244);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.WarningText);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.OrderTimeComboBox);
@@ -210,5 +241,6 @@
         private System.Windows.Forms.ComboBox OrderTimeComboBox;
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Label WarningText;
+        private System.Windows.Forms.Label Date;
     }
 }

@@ -15,11 +15,14 @@ namespace MegaDesk
         public AddQuote()
         {
             InitializeComponent();
+            DateTime date = DateTime.Now;
+            Date.Text = date.ToString("MM/dd/yyyy");
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-
+            DisplayQuote displayQuoteForm = new DisplayQuote(NameBox.Text, WidthBox.Text, DepthBox.Text, MaterialComboBox.Text, OrderTimeComboBox.SelectedItem, Date.Text, DrawerComboBox.Text);
+            displayQuoteForm.Show();
         }
 
         private void AddQuote_FormClosed(object sender, FormClosedEventArgs e)
@@ -69,11 +72,13 @@ namespace MegaDesk
                   
                 else
                 {
+
+
                 DepthBox.ForeColor = Color.Green;
 
                 WarningText.Text = "";
 
-            }
+                }
 
 
         }
