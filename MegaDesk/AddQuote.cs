@@ -21,5 +21,39 @@ namespace MegaDesk
         {
 
         }
+
+        private void AddQuote_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+
+        }
+
+        private void WidthBox_Validating(object sender, CancelEventArgs e)
+        {
+
+            if (double.TryParse(WidthBox.Text, out double value))
+            {
+                if (value < 24 || value > 96)
+                {
+                    WidthBox.ForeColor = Color.Red;
+                    WarningText.Text = "Width must be between 24 and 96";
+                }
+                else
+                {
+                    WidthBox.ForeColor = Color.Green;
+                    WarningText.Text = "";
+
+                }
+            }
+            else
+            {
+                WidthBox.ForeColor = Color.Red;
+                WarningText.Text = "Width must be a number between 24 and 96";
+
+            }
+
+
+        }
     }
 }

@@ -15,7 +15,8 @@ namespace MegaDesk
         public MainMenu()
         {
             InitializeComponent();
-            
+           
+
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -25,17 +26,30 @@ namespace MegaDesk
 
         private void SearchQuote_Click(object sender, EventArgs e)
         {
-
+            SearchQuotes searchQuotesForm = new SearchQuotes();
+            searchQuotesForm.Show();
+            Hide();
         }
 
         private void ViewQuote_Click(object sender, EventArgs e)
         {
-
+            ViewAllQuotes viewAllQuotesForm = new ViewAllQuotes();
+            viewAllQuotesForm.Show();
+            Hide();
         }
 
         private void AddQuote_Click(object sender, EventArgs e)
         {
-        
+            AddQuote addQuoteForm = new AddQuote();
+         
+            addQuoteForm.ShowDialog();
+            Hide();
+
+        }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
