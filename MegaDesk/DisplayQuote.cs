@@ -17,6 +17,12 @@ namespace MegaDesk
         {
             InitializeComponent();
             label7.Text = text1;
+            label8.Text = text2;
+            label9.Text = text3;
+            label10.Text = text4;
+            label11.Text = selectedItem.ToString();
+            Date.Text = text5;
+            label12.Text = text6;
 
         }
 
