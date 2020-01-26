@@ -36,9 +36,9 @@
             // 
             // AddQuote
             // 
-            this.AddQuote.Location = new System.Drawing.Point(13, 13);
+            this.AddQuote.Location = new System.Drawing.Point(12, 12);
             this.AddQuote.Name = "AddQuote";
-            this.AddQuote.Size = new System.Drawing.Size(149, 35);
+            this.AddQuote.Size = new System.Drawing.Size(200, 50);
             this.AddQuote.TabIndex = 0;
             this.AddQuote.Text = "Add New Quote";
             this.AddQuote.UseVisualStyleBackColor = true;
@@ -46,9 +46,9 @@
             // 
             // ViewQuote
             // 
-            this.ViewQuote.Location = new System.Drawing.Point(12, 54);
+            this.ViewQuote.Location = new System.Drawing.Point(12, 68);
             this.ViewQuote.Name = "ViewQuote";
-            this.ViewQuote.Size = new System.Drawing.Size(150, 38);
+            this.ViewQuote.Size = new System.Drawing.Size(200, 50);
             this.ViewQuote.TabIndex = 1;
             this.ViewQuote.Text = "View Quotes";
             this.ViewQuote.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // 
             // SearchQuote
             // 
-            this.SearchQuote.Location = new System.Drawing.Point(13, 98);
+            this.SearchQuote.Location = new System.Drawing.Point(12, 124);
             this.SearchQuote.Name = "SearchQuote";
-            this.SearchQuote.Size = new System.Drawing.Size(149, 33);
+            this.SearchQuote.Size = new System.Drawing.Size(200, 50);
             this.SearchQuote.TabIndex = 2;
             this.SearchQuote.Text = "Search Quotes";
             this.SearchQuote.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(12, 137);
+            this.Exit.Location = new System.Drawing.Point(12, 180);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(150, 32);
+            this.Exit.Size = new System.Drawing.Size(200, 50);
             this.Exit.TabIndex = 3;
             this.Exit.Text = "E&xit";
             this.Exit.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 385);
+            this.ClientSize = new System.Drawing.Size(478, 244);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.SearchQuote);
             this.Controls.Add(this.ViewQuote);

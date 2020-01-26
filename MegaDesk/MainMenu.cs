@@ -15,6 +15,7 @@ namespace MegaDesk
         public MainMenu()
         {
             InitializeComponent();
+            
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace MegaDesk
 
         private void AddQuote_Click(object sender, EventArgs e)
         {
-
+        
         }
     }
 }
