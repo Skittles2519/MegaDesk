@@ -92,6 +92,7 @@
             this.DepthBox.Name = "DepthBox";
             this.DepthBox.Size = new System.Drawing.Size(125, 26);
             this.DepthBox.TabIndex = 5;
+            this.DepthBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DepthBox_KeyPress);
             // 
             // label4
             // 

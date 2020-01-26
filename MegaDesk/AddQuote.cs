@@ -55,5 +55,27 @@ namespace MegaDesk
 
 
         }
+
+        private void DepthBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+          
+                if (!char.IsDigit(e.KeyChar))
+                {
+                    DepthBox.ForeColor = Color.Red;
+                    WarningText.Text = "Depth must be a digit";
+                    DepthBox.Text = "";
+
+                }
+                  
+                else
+                {
+                DepthBox.ForeColor = Color.Green;
+
+                WarningText.Text = "";
+
+            }
+
+
+        }
     }
 }
