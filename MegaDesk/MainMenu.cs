@@ -16,5 +16,25 @@ namespace MegaDesk
         {
             InitializeComponent();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void SearchQuote_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ViewQuote_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddQuote_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
